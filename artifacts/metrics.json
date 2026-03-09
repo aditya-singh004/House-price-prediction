@@ -1,0 +1,44 @@
+{
+  "rows_raw": 13320,
+  "rows_final": 7239,
+  "feature_count": 244,
+  "train_size": 5791,
+  "test_size": 1448,
+  "train_r2": 0.8508788596367616,
+  "test_r2": 0.8675953940721025,
+  "adjusted_test_r2": 0.8407402620302015,
+  "mae_lakhs": 15.913324155581778,
+  "rmse_lakhs": 26.522577814679394,
+  "mape_pct": 20.180118876498117,
+  "cv_r2_scores": [
+    0.8553974382898408,
+    0.8400612715174953,
+    0.7959025397042291,
+    0.8390067556678752,
+    0.8718740870913593
+  ],
+  "cv_r2_mean": 0.84044841845416,
+  "cv_r2_std": 0.02528876996331021,
+  "model_comparison_cv_r2": {
+    "linear_regression": {
+      "best_score": 0.84044841845416,
+      "best_params": {
+        "regressor__fit_intercept": true
+      }
+    },
+    "lasso": {
+      "best_score": 0.722393902946689,
+      "best_params": {
+        "regressor__alpha": 1,
+        "regressor__selection": "random"
+      }
+    },
+    "decision_tree": {
+      "best_score": 0.7645186770189067,
+      "best_params": {
+        "regressor__criterion": "squared_error",
+        "regressor__splitter": "random"
+      }
+    }
+  }
+}
